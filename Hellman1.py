@@ -51,7 +51,7 @@ def generaPrimos(mini, maxi):
         if privada != publica:
             return publica, privada # Devuelve en el orden original
 
-
+# prueba commit
 
 
 
