@@ -139,11 +139,11 @@ def fuerza_bruta_paralela(g, p, mensaje_Alice, mensaje_Bob, num_procesos=None):
 
 
 if __name__ == "__main__":
-    g_ejemplo = 12345701
-    p_ejemplo = 666666666666647
+    g_ejemplo = 7862847011909
+    p_ejemplo = 9460397478313
 
-    mensaje_Alice = 518633585
-    mensaje_Bob = 654181592
+    mensaje_Alice = 6517745061690
+    mensaje_Bob = 2546007328599
 
     print(f"Buscando claves para g={g_ejemplo}, p={p_ejemplo}, A={mensaje_Alice}, B={mensaje_Bob}")
     soluciones = fuerza_bruta_paralela(g_ejemplo, p_ejemplo, mensaje_Alice, mensaje_Bob)
