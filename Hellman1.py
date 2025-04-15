@@ -137,13 +137,32 @@ def fuerza_bruta_paralela(g, p, mensaje_Alice, mensaje_Bob, num_procesos=None):
     print(f"Búsqueda completada (o detenida). Tiempo total: {mostrarTiempo(t_total)} segundos.")
     return soluciones_final
 
-
+# Ejemplo de valores 1 de nuestra práctica
+'''
 if __name__ == "__main__":
     g_ejemplo = 7862847011909
     p_ejemplo = 9460397478313
 
     mensaje_Alice = 6517745061690
     mensaje_Bob = 2546007328599
+
+    print(f"Buscando claves para g={g_ejemplo}, p={p_ejemplo}, A={mensaje_Alice}, B={mensaje_Bob}")
+    soluciones = fuerza_bruta_paralela(g_ejemplo, p_ejemplo, mensaje_Alice, mensaje_Bob)
+    print("\n--- Soluciones Encontradas ---")
+    if soluciones:
+        for nombre, clave, tiempo in soluciones:
+            print(f"  - {nombre}: Clave privada = {clave} (encontrada en {tiempo:.6f} s)")
+    else:
+        print("  No se encontraron soluciones (o la búsqueda fue interrumpida).")
+'''
+
+# Mensaje de Ana Barberá y Emma Bonilla
+if __name__ == "__main__":
+    g_ejemplo = 12345701
+    p_ejemplo = 79999973
+
+    mensaje_Alice = 43259072
+    mensaje_Bob = 20432942
 
     print(f"Buscando claves para g={g_ejemplo}, p={p_ejemplo}, A={mensaje_Alice}, B={mensaje_Bob}")
     soluciones = fuerza_bruta_paralela(g_ejemplo, p_ejemplo, mensaje_Alice, mensaje_Bob)
